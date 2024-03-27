@@ -1,0 +1,136 @@
+CREATE DATABASE Musclehome;
+USE Musclehome;
+
+CREATE TABLE tips(
+
+		consecutivo	INTEGER     NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		archivoImagen	LONGBLOB 	    NOT NULL 
+		
+		);
+
+
+CREATE TABLE rutinas(
+		
+		codigo		INTEGER      NOT NULL PRIMARY KEY,
+		nivel		Varchar(13)  NOT NULL,
+		nombre		Varchar(50)  NOT NULL,
+ 		descripcion	Varchar(120) NOT NULL,
+		
+		CONSTRAINT	rutinas_codigo CHECK(codigo>0),
+		CONSTRAINT	rutinas_nivel CHECK(nivel in('novato','avanzado','experimentado'))
+
+		);
+
+CREATE TABLE usuarios(
+
+		nombres			Varchar(30) NOT NULL,
+		apellidos		Varchar(30) NOT NULL,
+		correoElectronico	Varchar(80) NOT NULL,
+		edad			INTEGER	    NOT NULL,
+		sexo			Varchar(1)  NOT NULL,
+		usuario			Varchar(20) NOT NULL PRIMARY KEY,
+		contrasena		Varchar(20) NOT NULL,
+		nivelExperiencia	Varchar(13) NOT NULL,
+		codigoRutina		INTEGER     NOT NULL,
+		
+		CONSTRAINT usuarios_edad CHECK(edad>0),
+		CONSTRAINT usuarios_sexo CHECK(sexo IN('M','F','m','f')),
+		CONSTRAINT usuarios_nivelExperiencia CHECK(nivel IN('novato','avanzado','experimentado')),
+	        CONSTRAINT usuarios_fk FOREIGN KEY(codigoRutina) REFERENCES rutinas(codigo)
+		
+		);
+
+
+CREATE TABLE ejercicios(
+
+		nombre 		Varchar(50) NOT NULL PRIMARY KEY
+		
+		);
+
+
+CREATE TABLE musculos(
+		
+		nombre 		Varchar(11) NOT NULL PRIMARY KEY
+
+		
+		     );
+
+
+CREATE TABLE medidas(
+
+		consecutivo 		INTEGER     NOT NULL AUTO_INCREMENT,
+		magnitud		FLOAT	    NOT NULL,
+		fecha			DATE        NOT NULL,
+		nombreMusculo		Varchar(11) NOT NULL,
+		usuarioUsuario		Varchar(20) NOT NULL, 
+		 
+		CONSTRAINT medidas_magnitud CHECK(magnitud>0),   
+		CONSTRAINT medidas_fk_usuario FOREIGN KEY(usuarioUsuario) REFERENCES usuarios(usuario),
+		CONSTRAINT medidas_fk_musculo FOREIGN KEY(nombreMusculo)  REFERENCES musculos(nombre),
+		CONSTRAINT medidas_pk PRIMARY KEY(consecutivo,nombreMusculo,usuarioUsuario)
+		);
+
+CREATE TABLE entrenamientos(
+
+		consecutivoMedida	Integer	    NOT NULL,
+		nombreMusculos		Varchar(11) NOT NULL,
+		nombreEjercicio		Varchar(50) NOT NULL,
+		
+
+		CONSTRAINT entrenamientos_fk_medida FOREIGN KEY(consecutivoMedida) REFERENCES medidas(consecutivo),
+		CONSTRAINT entrenamientos_fk_musculo FOREIGN KEY(nombreMusculos) REFERENCES medidas(nombreMusculo),
+		CONSTRAINT entrenamientos_fk_ejercicio FOREIGN KEY(nombreEjercicio) REFERENCES ejercicios(nombre),
+		CONSTRAINT entrenamientos_pk PRIMARY KEY (nombreMusculos,consecutivoMedida,nombreEjercicio)	
+);
+
+
+CREATE TABLE dias(
+ 
+		numero			INTEGER NOT NULL,
+		codigoRutina		INTEGER NOT NULL,
+
+		CONSTRAINT dias_fk_rutina FOREIGN KEY(codigoRutina) REFERENCES rutinas(codigo),
+		CONSTRAINT dias_pk PRIMARY KEY(numero,codigoRutina)
+
+		);
+
+CREATE TABLE ejecuciones(
+
+	
+		repeticiones		INTEGER     NOT NULL,
+		numeroSeries		INTEGER     NOT NULL,
+		tiempoDescanso		INTEGER     NOT NULL,
+		
+		nombreEjercicio		Varchar(50) NOT NULL,
+		numeroDia		INTEGER     NOT NULL,
+		codigoRutinaEjecucion   INTEGER     NOT NULL,
+		intensidad		Varchar(13)  NOT NULL,
+
+		CONSTRAINT ejecuciones_intensidad CHECK(intensidad IN('novato','avanzado','experimentado')),	
+		CONSTRAINT ejecuciones_repeticiones CHECK(repeticiones>0),
+		CONSTRAINT ejecuciones_numeroSeries CHECK(numeroSeries>0),
+		CONSTRAINT ejecuciones_tiempoDescanso CHECK(tiempoDescanso>0),
+		
+		CONSTRAINT ejecuciones_fk_ejercicio FOREIGN KEY(nombreEjercicio) REFERENCES ejercicios(nombre),
+		CONSTRAINT ejecuciones_fk_dia FOREIGN KEY(numeroDia) REFERENCES dias(numero),
+		CONSTRAINT ejecuciones_fk_rutina FOREIGN KEY(codigoRutinaEjecucion) REFERENCES dias(codigoRutina),
+
+		CONSTRAINT ejeciciones_pk PRIMARY KEY(nombreEjercicio,numeroDia,codigoRutinaEjecucion)
+
+);
+	
+
+CREATE TABLE contenidosMM(
+
+		archivo			LONGBLOB NOT NULL,
+		tipo			Varchar(6) NOT NULL,		
+		tamano			INTEGER NOT NULL,
+		formato			Varchar(4) NOT NULL,
+		consecutivo		INTEGER NOT NULL AUTO_INCREMENT,
+		nombreEjercicio		Varchar(50) NOT NULL,
+
+		CONSTRAINT contenidosMM_tipo CHECK(tipo IN('imagen','video')),
+		CONSTRAINT contenidosMM_fk FOREIGN KEY(nombreEjercicio) REFERENCES ejercicios(nombre),
+		CONSTRAINT contenidosMM_pk PRIMARY KEY(consecutivo,nombreEjercicio)
+
+);

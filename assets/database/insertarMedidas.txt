@@ -1,0 +1,33 @@
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','pectoral','kabbali');
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(25,'2015-03-29','espalda','kabbali');
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','cintura','kabbali');
+
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','biceps','kabbali');
+
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','triceps','kabbali');
+
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','antebrazo','kabbali');
+
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','gluteo','kabbali');
+
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','muslo','kabbali');
+
+
+insert into medidas(magnitud,fecha,nombreMusculo,usuarioUsuario)
+values(20,'2015-03-29','pantorrila','kabbali');

@@ -1,0 +1,35 @@
+insert into musculos()
+values('pectoral');
+
+
+insert into musculos()
+values('espalda');
+
+insert into musculos()
+values('cintura');
+
+
+insert into musculos()
+values('biceps');
+
+
+insert into musculos()
+values('triceps');
+
+
+insert into musculos()
+values('antebrazo');
+
+
+insert into musculos()
+values('gluteo');
+
+
+insert into musculos()
+values('muslo');
+
+
+insert into musculos()
+values('pantorrila');
+
+

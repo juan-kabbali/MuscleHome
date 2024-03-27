@@ -1,0 +1,8 @@
+insert into rutinas()
+values(1,'novato','rutina1','rutina para usuarios que no tengan experiencia en el entrenamiento fisico');
+
+insert into rutinas()
+values(2,'avanzado','rutina2','rutina para usuarios que entrenan casualmente');
+
+insert into rutinas()
+values(3,'experimentado','rutina3','rutina para usuarios que entrenan frecuentemente');

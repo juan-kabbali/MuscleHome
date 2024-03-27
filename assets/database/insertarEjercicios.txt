@@ -1,0 +1,113 @@
+insert into ejercicios()
+values('flexion');
+
+insert into ejercicios()
+values('curl de pie con barra');
+
+insert into ejercicios()
+values('sentadilla con barra');
+
+insert into ejercicios()
+values('squad');
+
+insert into ejercicios()
+values('remo en banco');
+
+insert into ejercicios()
+values('fondos entre bancos');
+
+insert into ejercicios()
+values('elevaciones laterales');
+
+insert into ejercicios()
+values('elevaciones frontales');
+
+________________________________________
+
+insert into ejercicios()
+values('flexiones espartanas');
+
+insert into ejercicios()
+values('flexiones hindu');
+
+insert into ejercicios()
+values('dominadas cerrado');
+
+insert into ejercicios()
+values('curl martillo');
+
+insert into ejercicios()
+values('sentadillas con una pierna');
+
+insert into ejercicios()
+values('squat');
+
+insert into ejercicios()
+values('zancadas con barra');
+
+insert into ejercicios()
+values('dominadas agarre amplio');
+
+insert into ejercicios()
+values('extencion vertical');
+
+insert into ejercicios()
+values('prensa de hombros');
+
+insert into ejercicios()
+values('flexion lateral');
+
+insert into ejercicios()
+values('elevacion de piernas');
+
+_____________________________________________
+
+insert into ejercicios()
+values('flexiones giro 360');
+
+insert into ejercicios()
+values('tap push up');
+
+insert into ejercicios()
+values('dominadas supinas');
+
+insert into ejercicios()
+values('flexiones invertidas');
+
+insert into ejercicios()
+values('cristos');
+
+insert into ejercicios()
+values('dominadas agarre v');
+
+insert into ejercicios()
+values('dips');
+
+insert into ejercicios()
+values('flexiones con arrastre');
+
+insert into ejercicios()
+values('sentadilla sissy');
+
+insert into ejercicios()
+values('sentadilla zumo');
+
+insert into ejercicios()
+values('elevaciona un solo pie');
+
+insert into ejercicios()
+values('pistol squat');
+
+
+
+insert into ejercicios()
+values('cuban press');
+
+insert into ejercicios()
+values('pajaritos de pie');
+
+insert into ejercicios()
+values('press alterno');
+
+insert into ejercicios()
+values('dragon abs');

@@ -1,0 +1,9 @@
+insert into tips(archivoImagen)
+values('C:\Users\Maria Fernanda\Documents\NetBeansProjects\MuscleHome\src\com\MuscleHome\images\tip\tip1.png');
+
+insert into tips(archivoImagen)
+values('C:\Users\Maria Fernanda\Documents\NetBeansProjects\MuscleHome\src\com\MuscleHome\images\tip\tip2.png');
+
+insert into tips(archivoImagen)
+values('C:\Users\Maria Fernanda\Documents\NetBeansProjects\MuscleHome\src\com\MuscleHome\images\tip\tip3.png');
+

@@ -1,0 +1,121 @@
+insert into ejecuciones()
+values(12,4,45,'flexion',1,1,'novato');
+
+insert into ejecuciones()
+values(12,4,60,'curl de pie con barra',1,1,'novato');
+
+insert into ejecuciones()
+values(10,4,60,'sentadilla con barra',2,1,'novato');
+
+insert into ejecuciones()
+values(15,4,30,'squad',2,1,'novato');
+
+insert into ejecuciones()
+values(12,4,45,'remo en banco',3,1,'novato');
+
+insert into ejecuciones()
+values(15,4,30,'fondos entre bancos',3,1,'novato');
+
+insert into ejecuciones()
+values(10,4,25,'elevaciones laterales',4,1,'novato');
+
+insert into ejecuciones()
+values(12,3,30,'elevaciones frontales',4,1,'novato');
+
+________________________________________________
+
+insert into ejecuciones()
+values(12,4,60,'flexiones espartanas',1,2,'avanzado');
+
+insert into ejecuciones()
+values(15,3,40,'flexiones hindu',1,2,'avanzado');
+
+insert into ejecuciones()
+values(12,3,60,'dominadas cerrado',1,2,'avanzado');
+
+insert into ejecuciones()
+values(10,4,30,'curl martillo',2,2,'avanzado');
+
+insert into ejecuciones()
+values(12,3,30,'sentadillas con una pierna',2,2,'avanzado');
+
+insert into ejecuciones()
+values(15,4,30,'squat',2,2,'avanzado');
+
+insert into ejecuciones()
+values(10,3,45,'zancadas con barra',3,2,'avanzado');
+
+insert into ejecuciones()
+values(10,3,60,'dominadas agarre amplio',3,2,'avanzado');
+
+
+insert into ejecuciones()
+values(12,4,30,'extencion vertical',3,2,'avanzado');
+
+
+insert into ejecuciones()
+values(10,4,30,'prensa de hombros',4,2,'avanzado');
+
+insert into ejecuciones()
+values(20,4,15,'flexion lateral',4,2,'avanzado');
+
+
+insert into ejecuciones()
+values(15,3,45,'elevacion de piernas',4,2,'avanzado');
+
+___________________________________________________
+
+insert into ejecuciones()
+values(10,3,45,'flexiones giro 360',1,3,'experimentado');
+
+insert into ejecuciones()
+values(12,3,60,'tap push up',1,3,'experimentado');
+
+insert into ejecuciones()
+values(10,3,30,'dominadas supinas',1,3,'experimentado');
+
+insert into ejecuciones()
+values(12,3,30,'flexiones invertidas',1,3,'experimentado');
+
+insert into ejecuciones()
+values(10,3,60,'cristos',2,3,'experimentado');
+
+insert into ejecuciones()
+values(7,4,60,'dominadas agarre v',2,3,'experimentado');
+
+insert into ejecuciones()
+values(10,3,45,'dips',2,3,'experimentado');
+
+insert into ejecuciones()
+values(8,4,60,'flexiones con arrastre',2,3,'experimentado');
+
+insert into ejecuciones()
+values(15,3,45,'sentadilla sissy',3,3,'experimentado');
+
+insert into ejecuciones()
+values(15,4,30,'sentadilla zumo',3,3,'experimentado');
+
+insert into ejecuciones()
+values(15,4,15,'elevaciona un solo pie',3,3,'experimentado');
+
+insert into ejecuciones()
+values(12,3,45,'pistol squat',3,3,'experimentado');
+
+insert into ejecuciones()
+values(12,4,30,'cuban press',4,3,'experimentado');
+
+insert into ejecuciones()
+values(15,3,60,'pajaritos de pie',4,3,'experimentado');
+
+insert into ejecuciones()
+values(10,3,40,'press alterno',4,3,'experimentado');
+
+insert into ejecuciones()
+values(12,3,90,'dragon abs',4,3,'experimentado');
+
+
+
+
+
+
+

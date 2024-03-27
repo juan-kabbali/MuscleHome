@@ -1,0 +1,3 @@
+CREATE DATABASE Musclehome;
+USE Musclehome;
+source C:\Users\Usuario\Downloads\Utorrent downloads\musclehome.sql;
